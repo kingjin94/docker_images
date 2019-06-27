@@ -1,6 +1,7 @@
 # This is an auto generated Dockerfile for ros:ros-core
 # generated from docker_images/create_ros_core_image.Dockerfile.em
-FROM ubuntu:bionic
+#FROM ubuntu:bionic
+FROM nvidia/opengl:1.0-glvnd-runtime-ubuntu18.04
 
 # setup timezone
 RUN echo 'Etc/UTC' > /etc/timezone && \
